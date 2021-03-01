@@ -1878,6 +1878,11 @@ are-we-there-yet@~1.1.2:
     delegates "^1.0.0"
     readable-stream "^2.0.6"
 
+area-data@^5.0.6:
+  version "5.0.6"
+  resolved "https://registry.npm.taobao.org/area-data/download/area-data-5.0.6.tgz#c381c3f88ff9e1050accd07549d206fce2a28d13"
+  integrity sha1-w4HD+I/54QUKzNB1SdIG/OKijRM=
+
 argparse@^1.0.7:
   version "1.0.10"
   resolved "https://registry.npm.taobao.org/argparse/download/argparse-1.0.10.tgz#bcd6791ea5ae09725e17e5ad988134cd40b3d911"
@@ -3415,6 +3420,11 @@ data-urls@^1.1.0:
     abab "^2.0.0"
     whatwg-mimetype "^2.2.0"
     whatwg-url "^7.0.0"
+
+dayjs@^1.8.17:
+  version "1.10.4"
+  resolved "https://registry.npm.taobao.org/dayjs/download/dayjs-1.10.4.tgz#8e544a9b8683f61783f570980a8a80eaf54ab1e2"
+  integrity sha1-jlRKm4aD9heD9XCYCoqA6vVKseI=
 
 debug@2.6.9, debug@^2.2.0, debug@^2.3.3, debug@^2.6.0, debug@^2.6.9:
   version "2.6.9"
@@ -6687,6 +6697,15 @@ move-concurrently@^1.0.1:
     mkdirp "^0.5.1"
     rimraf "^2.5.4"
     run-queue "^1.0.3"
+
+mp-colorui@^1.0.0-beta.1:
+  version "1.0.0-beta.1"
+  resolved "https://registry.npm.taobao.org/mp-colorui/download/mp-colorui-1.0.0-beta.1.tgz#94033ee3531cc868ca3fb850cea44da1c6d18c83"
+  integrity sha1-lAM+41McyGjKP7hQzqRNocbRjIM=
+  dependencies:
+    area-data "^5.0.6"
+    dayjs "^1.8.17"
+    rimraf "^3.0.2"
 
 ms@2.0.0:
   version "2.0.0"
