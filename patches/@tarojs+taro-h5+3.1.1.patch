@@ -1,0 +1,28 @@
+diff --git a/node_modules/@tarojs/taro-h5/dist/index.cjs.js b/node_modules/@tarojs/taro-h5/dist/index.cjs.js
+index fd8fb77..c802a8b 100644
+--- a/node_modules/@tarojs/taro-h5/dist/index.cjs.js
++++ b/node_modules/@tarojs/taro-h5/dist/index.cjs.js
+@@ -3088,7 +3088,8 @@ var getApp = function getApp() {
+ 
+ var pxTransform = function pxTransform(size, designWidth) {
+   if (designWidth == null) {
+-    throw new Error('pxTransform 函数在 H5 中运行需要把配置中的 `designWidth` 作为第二个参数传入');
++    designWidth = 750
++    // throw new Error('pxTransform 函数在 H5 中运行需要把配置中的 `designWidth` 作为第二个参数传入');
+   }
+ 
+   return Math.ceil(parseInt(size, 10) / 40 * 640 / designWidth * 10000) / 10000 + 'rem';
+diff --git a/node_modules/@tarojs/taro-h5/src/taro/index.js b/node_modules/@tarojs/taro-h5/src/taro/index.js
+index a6fc9b2..6d844b8 100644
+--- a/node_modules/@tarojs/taro-h5/src/taro/index.js
++++ b/node_modules/@tarojs/taro-h5/src/taro/index.js
+@@ -90,7 +90,8 @@ const getApp = function () {
+ 
+ const pxTransform = function (size, designWidth) {
+   if (designWidth == null) {
+-    throw new Error('pxTransform 函数在 H5 中运行需要把配置中的 `designWidth` 作为第二个参数传入')
++    designWidth = 750
++    // throw new Error('pxTransform 函数在 H5 中运行需要把配置中的 `designWidth` 作为第二个参数传入')
+   }
+   return Math.ceil((((parseInt(size, 10) / 40) * 640) / designWidth) * 10000) / 10000 + 'rem'
+ }

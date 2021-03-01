@@ -1,0 +1,20 @@
+diff --git a/node_modules/mp-colorui/dist/index.esm.js b/node_modules/mp-colorui/dist/index.esm.js
+index eb78386..5781322 100644
+--- a/node_modules/mp-colorui/dist/index.esm.js
++++ b/node_modules/mp-colorui/dist/index.esm.js
+@@ -1,5 +1,5 @@
+ import React, { useState as useState$1, useEffect as useEffect$1, Component as Component$1, useMemo as useMemo$1, useRef as useRef$1, createContext as createContext$1 } from 'react';
+-import Taro, { pxTransform, useReady } from '@tarojs/taro';
++import Taro, { pxTransform, useReady ,getSystemInfoSync} from '@tarojs/taro';
+ import { View, Image, Text, Button, Checkbox, CheckboxGroup, ScrollView, Input, Block, Radio, RadioGroup, PickerView, PickerViewColumn, Picker, Swiper, SwiperItem, Video, Switch, Textarea } from '@tarojs/components';
+ 
+ /*! *****************************************************************************
+@@ -367,7 +367,7 @@ var isNumber = function (obj) {
+ /**
+  * 按照 750 作为设计时的百分比
+  */
+-var screenPercent = Taro.getSystemInfoSync().screenWidth / 750;
++var screenPercent = getSystemInfoSync().screenWidth / 750;
+ /**
+  * 随机生成 id
+  * @param hashLength number 长度
